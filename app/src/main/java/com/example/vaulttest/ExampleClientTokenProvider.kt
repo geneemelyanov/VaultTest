@@ -26,7 +26,7 @@ internal class ExampleClientTokenProvider : ClientTokenProvider {
 
     companion object {
         private val builder = Retrofit.Builder()
-            .baseUrl("https://my-api.com")
+            .baseUrl("http://192.168.1.28:5000/")
             .addConverterFactory(GsonConverterFactory.create())
         private val httpClient = OkHttpClient.Builder()
         fun createService(): Api {

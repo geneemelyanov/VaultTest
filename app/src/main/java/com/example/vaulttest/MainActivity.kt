@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity(), PayPalListener {
         payPalClient = PayPalClient(this, braintreeClient)
 //        dataCollector = DataCollector(braintreeClient)
         payPalClient.setListener(this)
+        myTokenizePayPalAccountWithVaultMethod()
     }
 
     private fun myTokenizePayPalAccountWithVaultMethod() {
